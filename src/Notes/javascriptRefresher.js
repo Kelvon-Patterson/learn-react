@@ -61,3 +61,63 @@ const person= new Person();
 person.printMyName();
 person.printGender();
 
+//TODO:Properties are like"variables attached to classes/objects"
+// ES6 -- constructor(){
+//     this.myproperty = 'value';
+// }
+
+//TODO:ES7
+// myProperty = 'value';
+
+class Human{
+    gender = 'male';
+
+    printGender(){
+        console.log(this.gender);
+    }
+}
+
+class Person extends Human{
+
+        //need super keyword for inheritance
+        name='Kelvon';
+        gender='female'; //could change value in child class
+    }
+    printMyName = () => {
+        console.log(this.name);
+    }
+}
+const person= new Person();
+person.printMyName();
+person.printGender();
+
+//SPREAD AND REST OPERATORS
+// OPERATOR -> ...
+
+//SPREAD    Used to split up array elements OR object properties
+//          const newArray = [...oldArray,1,2]
+//          const newObject = {...oldObject, newProp:5}
+
+//REST      Used to merge a list of function arguments into an array
+//          function sortArgs(...args){
+//                  return args.sort()
+//                  }
+
+const numbers = [1,2,3];
+const newNumbers = [...numbers,4];
+
+const person = {
+     name = 'kelvon'
+};
+
+const newPerson = {
+    ...person,
+    age:24
+}
+
+const filter = (...args) => {
+    return args.filter(el=>el === 1);
+}
+
+
+
