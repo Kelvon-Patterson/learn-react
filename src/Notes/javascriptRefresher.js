@@ -69,27 +69,27 @@ person.printGender();
 //TODO:ES7
 // myProperty = 'value';
 
-class Human{
-    gender = 'male';
-
-    printGender(){
-        console.log(this.gender);
-    }
-}
-
-class Person extends Human{
-
-        //need super keyword for inheritance
-        name='Kelvon';
-        gender='female'; //could change value in child class
-    }
-    printMyName = () => {
-        console.log(this.name);
-    }
-}
-const person= new Person();
-person.printMyName();
-person.printGender();
+// class Human{
+//     gender = 'male';
+//
+//     printGender(){
+//         console.log(this.gender);
+//     }
+// }
+//
+// class Person extends Human{
+//
+//         //need super keyword for inheritance
+//         name='Kelvon';
+//         gender='female'; //could change value in child class
+//     }
+//     printMyName = () => {
+//         console.log(this.name);
+//     }
+// }
+// const person= new Person();
+// person.printMyName();
+// person.printGender();
 
 //SPREAD AND REST OPERATORS
 // OPERATOR -> ...
@@ -106,9 +106,9 @@ person.printGender();
 const numbers = [1,2,3];
 const newNumbers = [...numbers,4];
 
-const person = {
-     name = 'kelvon'
-};
+// const person = {
+//      name = 'kelvon'
+// };
 
 const newPerson = {
     ...person,
@@ -122,8 +122,8 @@ const filter = (...args) => {
 //Destructuring -- Easily extract array elements or object properties and store them in variables
 
 //Array destructuring
-const numbers1 = [1,2,3];
-[num1,num2] = numbers1;
+// const numbers1 = [1,2,3];
+// [num1,num2] = numbers1;
 
 //Array review
 
