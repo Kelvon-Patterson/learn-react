@@ -29,3 +29,35 @@ const multiply = number =>{
 //also can be written like
 const multiply2 = number => multiply(2);
 
+//TODO:CLASSES (Blueprints for objects
+//Ex: Person{name = 'Kelvon'; (Property)
+//   call()=>{...} (Method)
+//const myPerson = new Person() (usage)
+//myPerson.call (constructor call)
+//class Person extends Master(Inheritance)
+
+//Ex
+
+class Human{
+    constructor() {
+        this.gender = 'male';
+    }
+    printGender(){
+        console.log(this.gender);
+    }
+}
+
+class Person extends Human{
+    constructor() {
+        super(); //need super keyword for inheritance
+        this.name='Kelvon';
+        this.gender='female'; //could change value in child class
+    }
+    printMyName(){
+        console.log(this.name);
+    }
+}
+const person= new Person();
+person.printMyName();
+person.printGender();
+
