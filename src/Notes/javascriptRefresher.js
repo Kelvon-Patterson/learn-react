@@ -125,7 +125,11 @@ const filter = (...args) => {
 const numbers1 = [1,2,3];
 [num1,num2] = numbers1;
 
+//Array review
 
+const doubleNumArray = numbers1.map((num)=>{
+  return  num*2;
+})
 
 
 
