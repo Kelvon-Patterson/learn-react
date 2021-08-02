@@ -8,3 +8,7 @@
 // 1)Create (just a function returning some HTML code)
 // 2) export it
 // 3) import in the file where you want to use it
+
+//Outputting dynamic data and working with expresstions in JSX
+
+//Passing data via props
