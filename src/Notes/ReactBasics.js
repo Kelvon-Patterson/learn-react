@@ -12,3 +12,5 @@
 //Outputting dynamic data and working with expresstions in JSX
 
 //Passing data via props
+
+// were able to extract to extract code duplication by creating components that can be used anywhere
