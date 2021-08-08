@@ -14,3 +14,6 @@
 //Passing data via props
 
 // were able to extract to extract code duplication by creating components that can be used anywhere
+
+//TODO: look up details on props/ props children
+
